@@ -1,27 +1,54 @@
 -var path = '';
--var head_url = '';
--var head_title = '«»';
--var head_description = '';
+-var head_url = 'https://turmovich.mastervision.su/partnership-program/';
+-var head_title = '«Станьте востребованным онлайн-руководителем и развивайте партнёрские программы для бизнеса»';
+-var head_description = '2-дневный онлайн мастер-класс Вадима Турмовича';
 -var head_img = 'img/banner.jpg';
 -var styles = path+'css/styles.min.css';
 -var fav_ico = path+'favicon.ico';
 -var fav_png = path+'favicon.png';
--var scripts = path+'js/scripts.min.js';
-//- -var noref = true
-//- -var action = '';
-//- -var group = '';
-//- -var formId = '';
-//- -var formVc = '';
+-var libs = path+'js/libs.min.js';
+-var scripts = path+'js/scripts.js';
+-var noref = true;
+-var action = '';
+-var group = '';
+-var formId = '';
+-var formVc = '';
 //- -var footer_title = true
 //- -var oferta = 'https://mastervision.su/oferta.docx'
-//- -var ak = true
-<!DOCTYPE html>
+-var ak = true;
+-var ah = true;
+-var politics = 'https://mastervision.su/politics.pdf';
+-var bHref = '#Modal';
+
+mixin b(cl, clb, href, p, target, id)
+	.button-wrapper(class=cl)
+		a.button(class='button-'+clb href!=bHref target=target id=id)=p
+mixin gt(cl, h3)
+	h3.general-title(class=cl)=h3
+mixin imgs(cl, src ,alt)
+	img(class=cl src=path+src alt=alt)
+mixin gul(cl, ...items)
+	ul.general-list(class='general-list-'+cl)
+		each item in items
+			li=item
+
+doctype html
 html(lang="ru")
 	head
 		include pug/head
 		include pug/scripts/head_scripts
 	body
 		include pug/scripts/body_top_scripts
+		include pug/main/1-main
+		include pug/main/2-video
+		include pug/main/3-why
+		include pug/main/4-for
+		include pug/main/5-plan
+		include pug/main/6-lets
+		include pug/main/7-author
+		include pug/main/8-revs
+		include pug/main/9-last
+		include pug/main/10-modal
 		include pug/base/3-scripts
 		//- include pug/scripts/chat
 		include pug/scripts/body_bottom_scripts
