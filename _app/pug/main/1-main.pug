@@ -1,7 +1,5 @@
 section#main
 	.container
-		.general-img.general-img-main
-			+imgs('', 'img/images/main.png', 'Компьютер')
 		.content
 			include ../base/1-header
 			.row
@@ -14,9 +12,6 @@ section#main
 							span 29 и 30 сентября 19:00 (Мск)
 						p.main-date-text Автор: 
 							span Вадим Турмович
-				.col-md-4.hide
-					.general-img.general-img-main
-						+imgs('', 'img/images/main.png', 'Компьютер')
 			form(action=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target=form_target).form.form-main.general-wrapper.general-wrapper-blue
 				.row
 					.col-md-5
@@ -42,3 +37,4 @@ section#main
 					input(type="hidden" name="formVc" value=formVc)
 					input(type="hidden" name="_aid" value="")
 					input(type="hidden" name="_vcaid" value="")
+		+imgs('main-img', 'img/images/main.png', 'Компьютер')

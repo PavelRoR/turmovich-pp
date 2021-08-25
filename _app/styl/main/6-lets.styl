@@ -6,6 +6,12 @@
 	background-repeat: no-repeat
 	background-position: center
 	background-size cover
+	@media screen and (max-width 560px)
+		padding 60px 0
+		margin 30px 0
+	@media screen and (max-width 386px)
+		padding 40px 0
+		margin 20px 0
 .lets-item
 	width 100%
 	max-width 365px
@@ -15,9 +21,19 @@
 	background-color: rgba(255,255,255,.75)
 	padding 35px
 	min-height 200px
+	@media screen and (max-width 1199px)
+		min-height 252px
+	@media screen and (max-width 767px)
+		display block
+		min-height 1px
+	@media screen and (max-width 560px)
+		padding 20px
+		margin-bottom: 20px
 	&-text
 		text-align center
 		display table-cell
 		vertical-align: middle
+		@media screen and (max-width 991px)
+			display block
 .button-lets
 	margin-top: 20px

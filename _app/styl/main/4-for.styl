@@ -1,10 +1,16 @@
 #for
 	padding 90px 0
+	@media screen and (max-width 560px)
+		padding 60px 0
+	@media screen and (max-width 386px)
+		padding 40px 0
 .for-item
 	width 100%
 	max-width 278px
 	margin 0 auto 35px
 	text-align center
+	@media screen and (max-width 991px)
+		max-width 380px
 	&-img
 		display block
 		width 70px
@@ -13,6 +19,8 @@
 		background-image: url('../img/icons/for.png')
 		background-repeat: no-repeat
 		background-position: 0 0
+		@media screen and (max-width 991px)
+			margin-bottom: 20px
 		&-2
 			background-position: -70px 0
 		&-3

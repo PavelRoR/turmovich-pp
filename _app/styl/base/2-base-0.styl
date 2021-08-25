@@ -9,10 +9,14 @@ body
 	color #000
 	background-color #fff
 	line-height: 26px
+.container
+	@media screen and (min-width 2295px)
+		width 1400px
 .wrapper
 	overflow hidden
 .content
 	position relative
+	z-index 90
 a
 	color: #000
 	&:focus
@@ -77,6 +81,13 @@ footer
 	padding: 17px 30px
 	font-size: 16px
 	transition: all .4s ease
+	@media screen and (min-width 2295px)
+		font-size: 20px
+	@media screen and (max-width 560px)
+		padding 17px 20px
+	@media screen and (max-width 386px)
+		min-width 180px
+		line-height: 18px
 	&:focus
 		text-decoration none
 	&:hover
@@ -102,70 +113,3 @@ footer
 	&-wrapper
 		&-center
 			text-align center
-.general-title
-	margin-bottom: 50px
-	font-size: 30px
-	font-weight: 900
-	text-transform uppercase
-	color #000
-	&-center
-		text-align center
-	&-white
-		color #fff
-	&-video-mobile
-		display none
-		@media screen and (max-width 991px)
-			display block
-	&-video-desktop
-		@media screen and (max-width 991px)
-			display none
-.general-list
-	li
-		list-style: none
-		position relative
-		margin-bottom: 35px
-		padding-left: 38px
-		color #fff
-		&:last-child
-			margin-bottom: 0
-		&:before
-		&:after
-			content: ''
-			display block
-			position absolute
-			top 0
-			left 0
-			border-radius: 50px
-		&:before
-			background-color: #ebfa40
-			width 24px
-			height: 24px
-		&:after
-			background-color: #f530eb
-			width 10px
-			height 10px
-			top 7px
-			left 7px
-	&-2
-		li
-			list-style none
-.general-wrapper
-	border-radius 10px
-	padding 55px 45px 45px
-	&-blue
-		background-color: #152954
-		border 2px dashed #fff
-		box-shadow: 0 0 0 6px #152954
-	&-white
-		background-color #fff
-		box-shadow: 0 4px 15px 5px rgba(0,0,0, .15)
-	&-title
-		font-size: 20px
-		font-weight: bold
-		text-transform uppercase
-		margin-bottom: 30px
-.general-img
-	position relative
-	// padding-top: 100%
-	img
-		position absolute

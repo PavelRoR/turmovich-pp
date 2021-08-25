@@ -5,8 +5,25 @@
 	background-repeat: no-repeat
 	background-position: center
 	background-size: cover
+	@media screen and (max-width 991px)
+		padding 90px 0 30px
+	@media screen and (max-width 560px)
+		padding 60px 0 0
 .button-plan
 	margin-top: 60px
+	@media screen and (max-width 991px)
+		margin-top: 20px
 .general-img-plan
-	top 100px
-	right 200px
+	img
+		top 100px
+		right 0
+		@media screen and (min-width 2295px)
+			top 0
+		@media screen and (max-width 1199px)
+			right -200px
+		@media screen and (max-width 991px)
+			position: static
+			display block
+			width 100%
+			max-width 793px
+			margin 0 auto

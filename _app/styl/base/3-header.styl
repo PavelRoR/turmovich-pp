@@ -2,17 +2,33 @@ header
 	overflow hidden
 	padding 20px 0
 	margin-bottom: 40px
+	@media screen and (max-width 560px)
+		padding 10px 0
+		margin-bottom: 20px
 .header-logo
 	float left
 	width 200px
+	@media screen and (max-width 560px)
+		float: none
+		display block
+		margin 0 auto
+		width 150px
 .contacts
 	float: right
 	text-align right
 	line-height: 15px
+	@media screen and (max-width 560px)
+		line-height: 1
+		text-align center
+		float: none
 .contact
 	font-size: 16px
 	margin-left 20px
 	color #fff
+	@media screen and (max-width 560px)
+		margin 5px 5px 0
+		font-size: 14px
+		display inline-block
 	&:focus
 		text-decoration none
 		color #fff
