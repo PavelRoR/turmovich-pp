@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'TTNormsLight';
-    src: url('fonts/TTNormsLight.eot');
-    src: url('fonts/TTNormsLight.eot') format('embedded-opentype'),
-         url('fonts/TTNormsLight.woff2') format('woff2'),
-         url('fonts/TTNormsLight.woff') format('woff'),
-         url('fonts/TTNormsLight.ttf') format('truetype'),
-         url('fonts/TTNormsLight.svg#TTNormsLight') format('svg');
-}

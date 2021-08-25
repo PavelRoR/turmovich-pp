@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'TTNormsBlack';
-    src: url('fonts/TTNormsBlack.eot');
-    src: url('fonts/TTNormsBlack.eot') format('embedded-opentype'),
-         url('fonts/TTNormsBlack.woff2') format('woff2'),
-         url('fonts/TTNormsBlack.woff') format('woff'),
-         url('fonts/TTNormsBlack.ttf') format('truetype'),
-         url('fonts/TTNormsBlack.svg#TTNormsBlack') format('svg');
-}

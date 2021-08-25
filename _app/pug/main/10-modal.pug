@@ -1,4 +1,4 @@
-.modal#Modal
+.modal#Modal.general-wrapper.general-wrapper-blue
 	h3.modal-title Спешите записаться!
 	h3.modal-title.hide Мастер-класс завершён!
 	form(action=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target=form_target).form.form-modal
@@ -6,7 +6,7 @@
 			input( type="hidden" value="1" name="required_fields[email]")
 			input(class="input input-mail input-mail-modal" name="Contact[email]" type="text" placeholder="Ваш email")
 		.button-wrapper.button-wrapper-center
-			button(type="submit").button.button-form.button-form-modal Записаться на мастер-класс
+			button(type="submit").button.button-form.button-yellow.button-form-modal Записаться на мастер-класс
 		.clearfix
 		p.alert-message
 		.checking.checking-modal

@@ -1,16 +1,17 @@
 section#author
-	.container
-		.row
-			.col-md-5.col-md-push-7
-				.general-img.general-img-author
-					+imgs('', 'img/images/vadim.png', 'Вадим Турмович')
-			.col-md-7.col-md-pull-5
-				.general-wrapper.general-wrapper-blue
-					.general-wrapper-inner
+	.author-info
+		.container
+			.row
+				.col-md-5.col-md-push-7
+					.general-img.general-img-author
+						+imgs('', 'img/images/vadim.png', 'Вадим Турмович')
+				.col-md-7.col-md-pull-5
+					.general-wrapper.general-wrapper-blue
 						p.author-pre О тренере
-						+gt('', 'Вадим Турмович')
+						+gt('general-title-white', 'Вадим Турмович')
 						+gul('', 'Руководитель партнерской программы в компании с оборотом более 200 000 000 в год', 'Более 12 лет опыта работы в сфере продаж и построения партнерских программ', 'Имеет положительный опыт развития регионов', 'Опыт работы более чем с 1000 партнерами', 'Региональные вебинары на аудиторию более 2000 человек')
-		.author-about
+	.author-about
+		.container
 			.row
 				.col-md-6
 					.general-wrapper.general-wrapper-white

@@ -1,6 +1,7 @@
 mixin li(n, p)
-	.lets-item(class='lets-item-'+n)
-		p.lets-item-text=p
+	.col-md-4
+		.lets-item(class='lets-item-'+n)
+			p.lets-item-text=p
 
 section#lets
 	.container
@@ -13,4 +14,4 @@ section#lets
 			+li('4', 'Понять, что партнёрская программа – это возможность получить мощный толчок в плане самореализации')
 			+li('5', 'Открыть для себя инструмент, который позволит сделать существенный шаг вперёд для личностного роста и улучшения качества жизни')
 			+li('6', 'Выгодно сменить работу, заняв более высокую должность со значительным доходом')
-		+b('button-wrapper-center', 'yellow', href, 'Получить пользу')
+		+b('button-wrapper-center', 'yellow button-up button-lets', href, 'Получить пользу')
