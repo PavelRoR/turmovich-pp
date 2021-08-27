@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $(function () {
         var check = $('.check', this),
             email = $('.input-mail', this),
@@ -51,7 +51,16 @@ $(document).ready(function() {
             message.slideUp(500);
         });
     });
-
+    /* Модалка */
     $('.button-up').fancybox();
-/*Конец документа*/
+    /*Видео-отзывы*/
+    $(".video-wrapper-rev").click(function () {
+        $(".video-wrapper-rev iframe").each(function () {
+            var l = $(this).parent().attr('data-img');
+            $(this).parent().html('<img src="' + l + '" alt="Видео отзыв">');
+        })
+        var a = $(this).attr("data-youtube");
+        $(this).html('<iframe src="https://www.youtube.com/embed/' + a + '?showinfo=0&rel=0&autoplay=1&mute=1&modestbranding=1"  allowfullscreen></iframe>')
+    });
+    /*Конец документа*/
 });

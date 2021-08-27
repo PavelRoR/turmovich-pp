@@ -3,7 +3,7 @@ section#author
 		.container
 			.row
 				.col-md-5.col-md-push-7
-					.general-img.general-img-author
+					.general-img.general-img-author.general-img-author-1
 						+imgs('', 'img/images/vadim.png', 'Вадим Турмович')
 				.col-md-7.col-md-pull-5
 					.general-wrapper.general-wrapper-blue
@@ -27,3 +27,14 @@ section#author
 						ul.general-list-2
 							li - Закрытый недельный тренинг Дмитрия Семина для тренеров (обучение тренерскому мастерству и владение аудиторией)
 							li - Обучение по публичным выступлениям у Радислава Гандапаса и его тренинг «Харизма лидера»
+	.author-info
+		.container
+			.row
+				.col-md-5
+					//- .general-img.general-img-author.general-img-author-2
+					+imgs('general-img-author-2', 'img/images/alexander.png', 'Александр Кудряшов')
+				.col-md-7
+					.general-wrapper.general-wrapper-blue
+						p.author-pre О тренере
+						+gt('general-title-white', 'Александр Кудряшов')
+						+gul('', '10-летний опыт ведения бизнеса и создания партнерских структур', 'Повысил эффективность и прибыльность компании за счет внедрения KPI для сотрудников, а также реализации схемы бизнес-процессов по методологии госкорпорации «РосАтом»', '«Сапожник с сапогами»: построил собственную партнерскую программу с прибылью более 20 млн. рублей в месяц', 'Увеличил оборот своей компании в 9 раз за 3 года благодаря внедрению партнёрской программы', 'Соучредитель инвестиционной компании которая на старте привлекла более 100 млн. благодаря внедрению партнёрской программы')

@@ -2,10 +2,23 @@ section#main
 	.container
 		.content
 			include ../base/1-header
+			h1.main-title Благодарим Вас за регистрацию на наш мастер-класс
 			.row
 				.col-md-6
-					h1.main-title Информации пока нет...
-					br
-					p.main-text А пока, вот Вам котик
+					.video-wrapper.video-wrapper-main
+						iframe(src!="https://www.youtube.com/embed/OHHaDK3xDfE?autoplay=1&mute=1&modestbranding=1" allowfullscreen)
 				.col-md-6
-					img(src='https://i.pinimg.com/originals/ef/85/d0/ef85d0f73134ded81c460a1b70749685.gif' alt='Котик').main-img
+					p.main-text У нас к Вам просьба, прямо сейчас 
+						span подпишитесь на наш телеграм
+						|. В качестве бонуса, в благодарность за подписку в телеграм, Вы получите 
+						span что-то, что мы еще не придумали
+						br
+					p.main-text Более того Вы сможете задать любой интересующий вас вопрос специалисту компании
+					p.main-text 
+						span Перейдите в Нашего чат-бота
+					a.button.button-yellow(href=bot) Подписаться 
+						img(src=path+"img/icons/tg.png" alt="Telegram")
+			p.main-text.main-text-aftertext Обратите внимание, если вы не увидели во входящих сообщениях письмо благодарность, то обязательно проверьте вкладку 
+				span.spam спам
+				|, либо 
+				span.spam промоакции
