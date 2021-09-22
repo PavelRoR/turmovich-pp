@@ -1,0 +1,79 @@
+#plan
+	background-color: #59585A
+	background-image: url('../img/backs/lets.png')
+	background-repeat: no-repeat
+	background-position: center
+	background-size cover
+	margin-top: 60px
+	@media screen and (max-width 560px)
+		padding 60px 0
+		margin-top 30px
+	@media screen and (max-width 386px)
+		padding 40px 0
+		margin-top 20px
+	.container
+		min-height 874px
+		padding 90px 0
+		position relative
+.tab-content > .tab-pane
+	display: none;
+.tab-content > .active
+	display: block;
+.lessons
+	position relative
+	z-index 30
+.lessons-buttons
+	margin-bottom: 30px
+	width 100%
+	li
+		list-style: none
+		display inline-block
+		border-radius 5px
+		transition: all .3s ease
+		margin: 0 15px 25px 0
+		&.active
+		&:hover
+			background-color #EBFA40
+			box-shadow: 0 0 0 5px #F530EB
+			a
+				color #000
+		a
+			padding 10px
+			display block
+			color #fff
+.lesson
+	&-title
+		font-size: 20px
+		font-weight: bold
+		margin-bottom: 20px
+		color #fff
+	&-list
+		margin-bottom: 50px
+		li
+			list-style: none
+			padding-left: 25px
+			margin-bottom: 10px
+			position relative
+			color #fff
+			&:before
+				content: ''
+				display block
+				position absolute
+				width 10px
+				height: 10px
+				border-radius 50px
+				top 9px
+				left 0
+				background-color: #EBFA40
+	&-sublist
+		margin: 10px 0 0 20px
+		li
+			&:before
+				background-color: transparent
+				border 1px solid #EBFA40
+.plan-img
+	position absolute
+	right 0
+	bottom: 0
+	display block
+	z-index 0

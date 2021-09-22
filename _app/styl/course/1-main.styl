@@ -1,0 +1,95 @@
+#main
+	padding 0 0 75px
+	background-color: #080D1F
+	background-image: url(../img/backs/main.png)
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	color #fff
+	overflow hidden
+	.container
+		position relative
+	@media screen and (max-width 991px)
+		padding 0
+	@media screen and (max-width 560px)
+		text-align center
+		padding 0 0 40px
+.main
+	&-pre
+		font-size: 20px
+		margin-bottom: 10px
+		@media screen and (max-width 560px)
+			font-size: 16px
+	&-title
+		font-size: 40px
+		line-height: 48px
+		span
+			display inline-block
+			font-weight: bold
+		@media screen and (max-width 1199px)
+			font-size: 32px
+		@media screen and (max-width 560px)
+			font-size: 26px
+			line-height: 30px
+		@media screen and (max-width 386px)
+			font-size: 24px
+	&-subtitle
+		margin 30px 0 40px
+		font-size: 26px
+		line-height: 38px
+	&-date
+		position relative
+		background-color: #152954
+		border-radius 10px
+		padding 30px 30px 30px 50px
+		width auto
+		display inline-block
+		margin-bottom: 50px
+		&:before
+		&:after
+			content: ''
+			display block
+			position absolute
+			border-radius 50px
+		&:before
+			background-color: #ebfa40
+			width 40px
+			height: 40px
+			top calc(50% - 20px)
+			left: -20px
+		&:after
+			background-color: #f530eb
+			width 18px
+			height: 18px
+			top calc(50% - 9px)
+			left -9px
+		@media screen and (max-width 386px)
+			padding 45px 20px 20px
+			&:before
+				top -20px
+				left 0
+				right 0
+				margin 0 auto
+			&:after
+				top -9px
+				left 0
+				right 0
+				margin 0 auto
+		&-text
+			span
+				font-weight: bold
+.main-img
+	position absolute
+	top 50px
+	right -160px
+	height: 100%
+	z-index 0
+	@media screen and (max-width 1199px)
+		right -100px
+		top -100px
+	@media screen and (max-width 991px)
+		position: static
+		display block
+		width 100%
+		max-width 777px
+		margin-bottom: -200px

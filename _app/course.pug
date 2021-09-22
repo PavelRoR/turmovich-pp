@@ -1,0 +1,48 @@
+-var path = '../';
+-var head_url = 'https://turmovich.mastervision.su/partnership-program/course/';
+-var head_title = '«Руководитель, за которым идут миллионы»';
+-var head_description = 'Научитесь создавать и внедрять партнёрские программы и станьте специалистом нарасхват!';
+-var styles = path+'css/course.min.css';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var libs = path+'js/course-libs.min.js';
+-var scripts = path+'js/course.js';
+-var noref = true;
+-var footer_title = true
+-var oferta = 'https://mastervision.su/oferta.docx'
+-var ak = true;
+-var ah = true;
+-var politics = 'https://mastervision.su/politics.pdf';
+-var href = '#prices';
+
+mixin b(cl, clb, href, p, target, id)
+	.button-wrapper(class=cl)
+		a.button(class='button-'+clb href!=href target=target id=id)=p
+mixin gt(cl, h3)
+	h3.general-title(class=cl)=h3
+mixin imgs(cl, src ,alt)
+	img(class=cl src=path+src alt=alt)
+mixin gul(cl, ...items)
+	ul.general-list(class='general-list-'+cl)
+		each item in items
+			li=item
+
+doctype html
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		.wrapper
+			include pug/course/1-main
+			include pug/course/2-about
+			include pug/course/3-lets
+			include pug/course/4-plan
+			include pug/course/5-prices
+			include pug/main/7-author
+			include pug/main/8-revs
+			include pug/course/6-last
+		include pug/base/2-footer
+		include pug/base/3-scripts
+		include pug/scripts/body_bottom_scripts
