@@ -1,17 +1,30 @@
 #prices
 	padding 90px 0
+	@media screen and (max-width 560px)
+		padding 60px 0
+	@media screen and (max-width 386px)
+		padding 40px 0
 .packet
 	width 100%
 	max-width 600px
 	margin 0 auto 70px
 	position relative
 	min-height 890px
+	@media screen and (max-width 1199px)
+		min-height 1040px
+	@media screen and (max-width 991px)
+		min-height 1px
+	@media screen and (max-width 560px)
+		padding-bottom: 40px
+		margin-bottom: 30px
 	&-head
 		&-title
 			font-size: 36px
 			font-weight: bold
 			color #EBFA40
 			text-align center
+			@media screen and (max-width 560px)
+				font-size: 30px
 			small
 				display block
 				font-size: 16px
@@ -20,6 +33,8 @@
 				margin-bottom: 10px
 	&-body
 		padding 30px 0 20px
+		@media screen and (max-width 560px)
+			padding 20px 0
 		&-text
 			font-size: 20px
 			font-weight: bold
@@ -51,6 +66,8 @@
 		bottom: 45px
 		left 0
 		right 0
+		@media screen and (max-width 991px)
+			position: static
 .cost
 	font-size: 38px
 	text-transform uppercase
@@ -61,6 +78,15 @@
 		display block
 		font-size: 48px
 		font-weight: 900
+	@media screen and (max-width 560px)
+		font-size: 32px
+		line-height: 42px
+		span
+			font-size: 42px
+	@media screen and (max-width 386px)
+		font-size: 28px
+		span
+			font-size: 38px
 .prepayment
 	text-align center
 	&-title
@@ -69,9 +95,36 @@
 		text-transform uppercase
 		color red
 		line-height: 50px
+		@media screen and (max-width 560px)
+			font-size: 42px
 	&-text
 		font-size: 22px
 		margin 20px 0 30px
+		@media screen and (max-width 560px)
+			font-size: 18px
+			margin 15px 0 20px
 		span
 			display inline-block
 			font-weight: bold
+.packet-biz
+	margin-top: 70px
+	@media screen and (max-width 560px)
+		margin-top: 40px
+	&-text
+		text-align center
+		color #fff
+		font-size: 20px
+		margin-bottom: 20px
+		@media screen and (max-width 560px)
+			font-size: 18px
+			margin-bottom: 15px
+		span
+			font-weight: bold
+		&-attantion
+			color red
+			font-size: 22px
+			font-weight: bold
+.button-packet-biz
+	margin-top: 40px
+	@media screen and (max-width 560px)
+		margin-top: 30px

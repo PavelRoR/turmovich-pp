@@ -10,7 +10,7 @@
 	.container
 		position relative
 	@media screen and (max-width 991px)
-		padding 0
+		padding 0 0 60px
 	@media screen and (max-width 560px)
 		text-align center
 		padding 0 0 40px
@@ -29,14 +29,21 @@
 		@media screen and (max-width 1199px)
 			font-size: 32px
 		@media screen and (max-width 560px)
-			font-size: 26px
+			font-size: 28px
 			line-height: 30px
-		@media screen and (max-width 386px)
-			font-size: 24px
+		// @media screen and (max-width 386px)
+		// 	font-size: 24px
 	&-subtitle
 		margin 30px 0 40px
 		font-size: 26px
 		line-height: 38px
+		@media screen and (max-width 1199px)
+			br
+				display none
+		@media screen and (max-width 386px)
+			font-size: 22px
+			line-height: 24px
+			margin-bottom: 50px
 	&-date
 		position relative
 		background-color: #152954
@@ -85,11 +92,11 @@
 	height: 100%
 	z-index 0
 	@media screen and (max-width 1199px)
-		right -100px
-		top -100px
+		right -300px
+		top 50px
 	@media screen and (max-width 991px)
 		position: static
 		display block
 		width 100%
 		max-width 777px
-		margin-bottom: -200px
+		margin 40px auto 0
