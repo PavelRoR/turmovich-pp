@@ -1,0 +1,16 @@
+section#record
+	.container
+		+gt('general-title-center','Записи мастер-класса')
+		.row
+			.col-md-6
+				.record
+					h4.record-title Запись занятия от 29.09.21
+					.video-wrapper.video-wrapper-record
+						iframe(src!="https://youtube.com/embed/<?=$videos[0];?>?modestbranding=1" allowfullscreen)
+					p.record-text(class!="<?=$hides[0];?>") Запись занятия появится здесь 30.09.21 после 13:00 (мск)
+			.col-md-6
+				.record
+					h4.record-title Запись занятия от 30.09.21
+					.video-wrapper.video-wrapper-record
+						iframe(src!="https://youtube.com/embed/<?=$videos[1];?>?modestbranding=1" allowfullscreen)
+					p.record-text(class!="<?=$hides[1];?>") Запись занятия появится здесь 01.10.21 после 13:00 (мск)

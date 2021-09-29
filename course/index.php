@@ -1,3 +1,4 @@
+<?php require_once('vars.php');?>
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -36,8 +37,8 @@
             </header>
             <div class="row">
               <div class="col-md-8">
-                <p class="main-pre">Обучающий курс</p>
-                <h1 class="main-title">Руководитель, <br>за которым идут <span>миллионы</span></h1>
+                <p class="main-pre">(записи мастер-класса - внизу страницы)</p>
+                <h1 class="main-title"><small>Обучающий курс</small>Руководитель, <br>за которым идут <span>миллионы</span></h1>
                 <p class="main-subtitle">Научитесь создавать и внедрять партнёрские программы <br>и станьте специалистом нарасхват!</p>
                 <div class="main-date">
                   <p class="main-date-text">Старт: <span> 5 октября, 19:00 (Мск)</span></p>
@@ -432,6 +433,31 @@
           </div>
         </div>
       </section>
+      <section id="record">
+        <div class="container">
+          <h3 class="general-title general-title-center">Записи мастер-класса</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="record">
+                <h4 class="record-title">Запись занятия от 29.09.21</h4>
+                <div class="video-wrapper video-wrapper-record">
+                  <iframe src="https://youtube.com/embed/<?=$videos[0];?>?modestbranding=1" allowfullscreen></iframe>
+                </div>
+                <p class="record-text <?=$hides[0];?>">Запись занятия появится здесь 30.09.21 после 13:00 (мск)</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="record">
+                <h4 class="record-title">Запись занятия от 30.09.21</h4>
+                <div class="video-wrapper video-wrapper-record">
+                  <iframe src="https://youtube.com/embed/<?=$videos[1];?>?modestbranding=1" allowfullscreen></iframe>
+                </div>
+                <p class="record-text <?=$hides[1];?>">Запись занятия появится здесь 01.10.21 после 13:00 (мск)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="last">
         <div class="container">
           <h3 class="last-title">Начните сейчас!</h3>
@@ -451,5 +477,8 @@
     </footer>
     <script src="../js/course-libs.min.js"></script>
     <script src="../js/course.js"></script>
+    <!-- BEGIN CALLPY CODE {literal}  -->
+    <script>(function(w,t,p,v,c,f,s,r,h,l,d){w[p]="//callpy.com/";w[v]="5.10";w[c]=false;if(t==w){var tmp=l.callpy_data;if(tmp==null||!l.callpy_html||!l[c]){w[f]=false}else{w[f]=true;w[s]=JSON.parse(tmp);var tm=new Date().getTime();if(tm-w[s].lastSave<20000){if(w[s].insertcode){eval(w[s].insertcode)}else{w[f]=false}}else{w[f]=false}}}else{w[f]=false}var callpy_script=d.createElement("script");try{var tmp=parent.window.location.href?1:0}catch(e){var tmp=0}callpy_script.type="text/javascript";callpy_script.async=true;if(!w[f]||!l[h]){l[h]=new Date().getTime()}callpy_script.src=w[p]+"c/"+w.location.host.replace(/www./i,"")+"/"+(t==w?(w[f]?1:2):(tmp==1?4:3))+".js?id=19509&m="+l[h];callpy_script.onload=function(){iowisp.init()};d.body.appendChild(callpy_script)})(window,window.top,"callpy_path","callpy_version","tiny","sven","callpy_storage","callpy_chat_scroller","callpy_lastchat",localStorage,document);</script>
+    <!-- {/literal} END CALLPY CODE  -->
   </body>
 </html>
